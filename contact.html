@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                background-color: lightblue;
-            }
-            .content {
-                text-align: center;
-                align-items: center;
-                justify-items: center;
-                place-items: center;
-                padding: auto;
-                margin: auto;;
-            }
-        </style>
-        <title>Contact</title>
-    </head>
-    <body>
-        <div id="content" class="content">
-            <h1 style="color: red;">Contact</h1>
-            <form id="contact-form">
-                <label style="color: black;" for="Name">Name: <input type="text"></label><br>
-                <label style="color: black;" for="Email">Email: <input type="email"></label><br>
-                <label style="color: black;" for="Message">Message: <textarea></textarea></label><br>
-                <input type="submit" value="Send">
-            </form><br>
-            <button><a href="index.html">Home</a></button>
-            <button><a href="project.html">Project</a></button>
-            <button><a href="profile.html">Profile</a></button>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            margin: 50px auto;
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        label {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            flex: 1;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        input[type="submit"] {
+            align-self: center;
+            margin-top: 10px;
+            padding: 8px 16px;
+        }
+    </style>
+    <title>Contact</title>
+</head>
+<body>
+    <div id="content" class="content">
+        <h1 style="color: red;">Contact</h1>
+        <form id="contact-form">
+            <label for="Name">Name:
+                <input type="text" id="Name" name="Name">
+            </label>
+            <label for="Email">Email:
+                <input type="email" id="Email" name="Email">
+            </label>
+            <label for="Message">Message:
+                <textarea id="Message" name="Message"></textarea>
+            </label>
+            <input type="submit" value="Send">
+        </form><br>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="project.html">Project</a></button>
+        <button><a href="profile.html">Profile</a></button>
+    </div>
+</body>
 </html>
