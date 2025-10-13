@@ -15,6 +15,27 @@
                 border-radius: 100%;
                 width: 200px;
                 height: 200px;
+                border: 2px solid red;
+                padding: 5px;
+                margin: 5px;
+            }
+            button {
+                margin: 5px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            h1 {
+                color: white;
+            }
+            .info {
+                text-align: center;
+                font-size: medium;
+                line-height: 5px;
+                border: 1px solid aqua;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 5px;
+                color: white;
             }
         </style>
         <title>Trang cá nhân của Hùng</title>
@@ -22,10 +43,12 @@
     <div id="content" class="content">
         <h1>Trang cá nhân của Hùng</h1>
         <img src="images/six.webp" alt="logo">
-        <p>Name: Hùng</p>
-        <p>Class: 24C3</p>
-        <button><a href="index.html">Home</a></button>
-        <button><a href="project.html">Project</a></button>
-        <button><a href="contact.html">Contact</a></button>
+        <div id="info" class="info">
+             <p>Name: Hùng</p>
+             <p>Class: 24C3</p>
+        </div>
+        <a href="index.html"><button>Home</button></a>
+        <a href="project.html"><button>Project</button></a>
+        <a href="contact.html"><button>Contact</button></a>
     </div>
 </html>
