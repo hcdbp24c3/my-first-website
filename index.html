@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            nav {
-                background-color: blue;
-            }
-            ul {
-                display: flex;
-                list-style: none;
-                margin: 1px;
-                padding: 1px;
-                justify-content: center;
-            }
-            li {
-                margin: 5px 15px;
-                border-right: 1px solid black;
-                border-left: 1px solid black;
-                padding-left: 25px;
-                padding-right: 25px;
-                color: white;
-            }
-            a {
-                color: white;
-                text-decoration: none;
-                padding: 15px 0;
-                display: block;
-            }
-            a:hover {
-                color: yellow;
-            }
-            .content {
-                text-align: center;
-                align-items: center;
-                justify-items: center;
-                place-items: center;
-                padding: auto;
-                margin: auto;
-            }
-        </style>
-        <title>My Profile</title>
-    </head>
-    <body>
-        <nav id="menu">
-            <ul>
-                <li><a href="profile.html">Giới thiệu</a></li>
-                <li><a href="project.html">Dự án</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
-            </ul>
-        </nav>
-        <div class="content" id="content">
-            <h1>Wellcome to my first website !!!</h1>
-            <img src="images/2f0bd565bfa6b81faee34e1f96e95895_take-the-hello-clipart-hello-hd-clipart_1846-1029.jpeg" alt="webp">
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #4a4e69;
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #6c6783;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #857d9d;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fcbf49;
+        }
+
+        .content {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        h1 {
+            color: #22223b;
+        }
+
+        img {
+            border-radius: 20px;
+            max-width: 90%;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+    <title>My Profile</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="profile.html">Giới thiệu</a></li>
+            <li><a href="project.html">Dự án</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="content">
+        <h1>Welcome to my first website !!!</h1>
+        <img src="images/2f0bd565bfa6b81faee34e1f96e95895_take-the-hello-clipart-hello-hd-clipart_1846-1029.jpeg" alt="webp">
+    </div>
+</body>
 </html>

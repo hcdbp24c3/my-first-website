@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                background-color: black;
-            }
-            .content {
-                text-align: center;
-                align-items: center;
-                justify-items: center;
-                place-items: center;
-                padding: auto;
-                margin: auto;
-            }
-            img {
-                border-radius: 100%;
-                width: 200px;
-                height: 200px;
-                border: 2px solid red;
-                padding: 5px;
-                margin: 5px;
-            }
-            button {
-                margin: 5px;
-                padding: 5px;
-                border-radius: 5px;
-            }
-            h1 {
-                color: white;
-            }
-            .info {
-                text-align: center;
-                font-size: medium;
-                line-height: 5px;
-                border: 1px solid aqua;
-                border-radius: 5px;
-                padding: 5px;
-                margin: 5px;
-                color: white;
-            }
-        </style>
-        <title>Trang cá nhân của Hùng</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang cá nhân của Hùng</title>
+    <style>
+        body {
+            background-color: #1e1e2f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a2a3d;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        h1 {
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            border: 3px solid #00ffff;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        .info {
+            font-size: 16px;
+            line-height: 1.6;
+            border: 1px solid #00ffff;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 15px auto;
+            max-width: 250px;
+            color: #e0e0e0;
+            background-color: #1b1b2b;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            margin: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #00bcd4;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #008c9e;
+        }
+    </style>
+</head>
+<body>
     <div id="content" class="content">
         <h1>Trang cá nhân của Hùng</h1>
-        <img src="images/six.webp" alt="logo">
+        <img src="images/six.webp" alt="Avatar của Hùng">
         <div id="info" class="info">
-             <p>Name: Hùng</p>
-             <p>Class: 24C3</p>
+            <p>Name: Hùng</p>
+            <p>Class: 24C3</p>
         </div>
         <a href="index.html"><button>Home</button></a>
         <a href="project.html"><button>Project</button></a>
         <a href="contact.html"><button>Contact</button></a>
     </div>
+</body>
 </html>
