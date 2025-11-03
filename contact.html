@@ -38,18 +38,21 @@
             background-color: #1b1b2b;
             color: white;
             font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .form-group {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 150px 1fr; /* ✅ label cố định, input co giãn */
             grid-gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         label {
             text-align: right;
             padding-right: 10px;
-            align-self: center;
         }
 
         input[type="text"],
@@ -61,23 +64,26 @@
             border: 1px solid #555;
             background-color: #2f2f3f;
             color: #f0f0f0;
+            box-sizing: border-box;
         }
 
         textarea {
-            grid-column: span 2;
             resize: vertical;
             min-height: 80px;
         }
 
+        .submit-container {
+            text-align: center; /* ✅ căn giữa nút gửi */
+        }
+
         input[type="submit"] {
-            grid-column: span 2;
-            justify-self: center;
-            padding: 10px 20px;
+            padding: 10px 25px;
             border-radius: 8px;
             background-color: #00bcd4;
             color: white;
             border: none;
             cursor: pointer;
+            font-weight: bold;
             transition: background-color 0.3s ease;
         }
 
@@ -119,10 +125,13 @@
 
                 <label for="Message">Message:</label>
                 <textarea id="Message" name="Message" required></textarea>
+            </div>
 
+            <div class="submit-container">
                 <input type="submit" value="Send">
             </div>
         </form>
+
         <a href="index.html"><button>Home</button></a>
         <a href="profile.html"><button>Profile</button></a>
         <a href="project.html"><button>Project</button></a>
