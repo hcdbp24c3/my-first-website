@@ -1,3 +1,4 @@
-function test(){
-    document.getElementById("test").innerHTML = "Hello world";
+function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }
