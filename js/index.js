@@ -1,3 +1,3 @@
-function test {
-    document.getElementById=("title").innerHTML = "Xin chào";
+function test(){
+    document.getElementById("test").innerHTML = "Hello world";
 }
